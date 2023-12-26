@@ -12,6 +12,10 @@
   --heder-title-color: #ffc2e6;
   --main-font-family: "IBM Plex mono";
 
+  .page {
+    background-color: var(--background-color);
+  }
+
   .rec {
     display: none;
   }
@@ -29,6 +33,7 @@
     --outline-color: #353430;
     --shadow-color: #ff8dcb;
     --text-color: #353430;
+    --background-color: #fff1f7;
     --section-title-color: #353430;
     --background-title-color: #ff8dcb;
     --heder-title-color: #ffc2e6;
@@ -37,6 +42,7 @@
 
   .page {
     background-image: url(../images/cover-image-light.png);
+    background-color: var(--background-color);
   }
 
   .rec {
