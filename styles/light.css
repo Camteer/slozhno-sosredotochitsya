@@ -1,9 +1,9 @@
-
 .page.theme_light {
   background-image: url(../images/cover-image-light.png);
   --accent-color: #353430;
   --title-color: #353430;
   --border-color: #353430;
+  --background-color: #fff1f7;
   --outline-color: #353430;
   --shadow-color: #ff8dcb;
   --text-color: #353430;
