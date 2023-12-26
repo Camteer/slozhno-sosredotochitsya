@@ -13,11 +13,11 @@
 
 .header {
   height: 100vh;
+  min-height: 668px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
   font-family: var(--main-font-family), sans-serif;
   color: var(--accent-color);
   padding: 20px;
@@ -93,6 +93,7 @@
   min-height: 23px;
   display: flex;
   align-self: center;
+  cursor: poi;
 }
 
 .header__theme-menu-button_active {
@@ -118,7 +119,7 @@
 .header__text {
   max-width: 491px;
   width: 100%;
-  font-family: var(--main-font-family);
+  font-family: var(--main-font-family), sans-serif;
   color: var(--title-color);
   font-size: 18px;
   font-weight: 700;
@@ -274,7 +275,7 @@
   display: grid;
   gap: 25px 20px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 0.5fr);
+  grid-template-rows: 260px 315px 428px;
   overflow: hidden;
   grid-template-areas:
     "sunset sunset ice"
@@ -287,6 +288,8 @@
 }
 
 .footer {
+  height: 100vh;
+  min-height: 668px;
   display: flex;
   max-width: 100%;
   min-height: 768px;
@@ -323,7 +326,7 @@
 
 .footer__title {
   text-align: center;
-  font-family: var(--main-font-family);
+  font-family: var(--main-font-family), sans-serif;
   color: var(--heder-title-color);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   text-shadow: 2px 2px 0px var(--shadow-color);
@@ -371,6 +374,10 @@
     gap: 13px;
   }
 
+  .header{
+    min-height: 1024px;
+  }
+
   .header__title {
     padding-top: 0;
     padding-bottom: 134px;
@@ -400,6 +407,10 @@
     flex-basis: 475px;
   }
 
+  .section__gallery {
+    grid-template-rows: 192px 230px 318px;
+  }
+
   .footer {
     min-height: 1015px;
   }
@@ -408,6 +419,7 @@
 @media (width < 728px) {
   .header {
     padding: 10px;
+    min-height: 668px;
   }
 
   .header::before {
