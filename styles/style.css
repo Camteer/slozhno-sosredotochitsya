@@ -93,7 +93,7 @@
   min-height: 23px;
   display: flex;
   align-self: center;
-  cursor: poi;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
